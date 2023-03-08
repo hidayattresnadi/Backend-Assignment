@@ -1,0 +1,47 @@
+[
+    {
+        "userName": "Dayat",
+        "password": "123456",
+        "fullName": "Hidayat Tresnadi"
+    },
+    {
+        "userName": "Aditya",
+        "password": "123456",
+        "fullName": "Aditya Rahman"
+    },
+    {
+        "userName": "Irham",
+        "password": "123456",
+        "fullName": "Irham Maul"
+    },
+    {
+        "userName": "Kurumi",
+        "password": "123456",
+        "fullName": "Tokisaki Kurumi Haidar"
+    },
+    {
+        "userName": "Akbar",
+        "password": "123456",
+        "fullName": "Akbar Hakim"
+    },
+    {
+        "userName": "Kiki",
+        "password": "123456",
+        "fullName": "Kiki Haidar"
+    },
+    {
+        "userName": "Shiki",
+        "password": "123456",
+        "fullName": "Ryougi Shiki"
+    },
+    {
+        "userName": "Hitagi",
+        "password": "123456",
+        "fullName": "Senjougahara Hitagi"
+    },
+    {
+        "userName": "Pansy",
+        "password": "123456",
+        "fullName": "Sumireko Sanshokuin"
+    }
+]
