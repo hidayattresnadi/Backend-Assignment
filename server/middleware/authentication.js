@@ -2,11 +2,13 @@ const {decodeToken}=require('../helper/index')
 const { User} = require('../models/index')
 async function authentication(req, res, next) {
     try {
-        let acess_Token = req.headers.acesstoken
-        if(!acess_Token){
+        let acessToken = req.headers['authorization']
+        let bearerToken= acessToken.split(" ")
+        let userToken=bearerToken[1]
+        if(!userToken){
             throw{name:'Unauthorized'}
         }
-        let payload = decodeToken(acess_Token)
+        let payload = decodeToken(userToken)
         if(!payload){
             throw{name:"Jsonwebtokenerror"}
         }
