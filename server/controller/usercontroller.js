@@ -5,7 +5,11 @@ class UserController {
         try {
             let { userName, fullName, password } = req.body
             let newUser = await User.create({ userName, fullName, password })
-            res.status(200).json({ userName, fullName })
+            let payload = {
+                id: newUser.id
+            }
+            let acessToken = token(payload)
+            res.status(200).json({ userName, fullName,acessToken })
         } catch (error) {
             next(error)
         }
@@ -31,8 +35,8 @@ class UserController {
             let payload = {
                 id: user.id
             }
-            let acess_token = token(payload)
-            res.status(200).json({ userName, acess_token })
+            let acessToken = token(payload)
+            res.status(200).json({ userName, acessToken })
         } catch (error) {
             next(error)
         }
